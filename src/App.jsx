@@ -22,7 +22,7 @@ export default function App() {
   const rollDice = () => {
     const newDice = Math.floor(Math.random() * 6) + 1;
     const newPositions = { ...gameState.positions };
-
+    
     newPositions[gameState.turn] = Math.min(
       57, 
       newPositions[gameState.turn] + newDice
